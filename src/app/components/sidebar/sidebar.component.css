@@ -67,14 +67,18 @@
 /*    }*/
 /*  }*/
 /*}*/
+
+sidebar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */}
 .sidebar {
-  width: 220px;
+  width: 200px;
   background: #e8f5e9;
-  height: 100vh; // full height, but no scroll
-padding: 20px 16px;
+  height: 90%;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 
   .logo {
     font-size: 22px;
@@ -89,6 +93,7 @@ padding: 20px 16px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    overflow: hidden;
 
     li {
       display: flex;
@@ -118,13 +123,13 @@ padding: 20px 16px;
   }
 
   .signout {
-    margin-top: 32px;
+    margin-bottom: 32px;
     align-self: flex-start;
     border: none;
     background: #f0f4f1;
     color: #2d4e30;
     font-weight: 500;
-    padding: 8px 18px;
+    /*padding: 8px 18px;*/
     border-radius: 999px;
     display: flex;
     align-items: center;

@@ -13,3 +13,18 @@
     padding-bottom: 16px;
   }
 }
+mat-sidenav-container {
+  height: 100vh; /* Chiều cao cố định = chiều cao màn hình */
+}
+
+mat-sidenav-content {
+  overflow-y: auto; /* Cho phép scroll nội dung nếu dài hơn viewport */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* tránh scroll toàn trang nếu không muốn */
+}
+
