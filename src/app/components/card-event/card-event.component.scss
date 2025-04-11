@@ -1,0 +1,17 @@
+.card-event {
+  width: 200px;
+  height: 140px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .label {
+    background: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    color: #4caf50;
+  }
+}

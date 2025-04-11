@@ -1,15 +1,18 @@
-<mat-toolbar>
-  <span>🌱 Hệ thống học tập</span>
-</mat-toolbar>
-
-<div style="padding: 24px;">
-  <h1>Chào mừng bạn!</h1>
-
-  <button mat-raised-button color="primary">Nút Primary (Xanh lá)</button>
-  <button mat-raised-button color="tertiary" style="margin-left: 8px;">
-    Nút Tertiary (Xanh dương)
-  </button>
-  <button mat-raised-button color="warn" style="margin-left: 8px;">
-    Nút Warn (Đỏ)
-  </button>
-</div>
+<app-topbar></app-topbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened><app-sidebar></app-sidebar></mat-sidenav>
+  <mat-sidenav-content>
+    <div class="section">
+      <h2>Discussion</h2>
+      <div class="card-list">
+        <app-card-room *ngFor="let room of rooms"></app-card-room>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Event</h2>
+      <div class="card-list">
+        <app-card-event *ngFor="let event of events" [label]="event.label"></app-card-event>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,15 @@
+.section {
+  padding: 24px;
+
+  h2 {
+    margin-bottom: 12px;
+    color: #376a3e;
+  }
+
+  .card-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
+}
